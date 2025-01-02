@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Hotel</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .form-container {
+            margin: 20px auto;
+            max-width: 600px;
+        }
+
+        .table-container {
+            margin: 20px auto;
+            max-width: 90%;
+        }
+
+        .resume {
+            margin-top: 20px;
+        }
+
+        .room-card,
+        .facility-card {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .room-card:hover,
+        .facility-card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-img {
+            height: 200px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 800px;
+            background-color: #dddddd;
+            padding: 1rem;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-simpan {
+            background-color: #586ff0;
+            color: white;
+            border: none;
+        }
+
+        .btn-batal {
+            background-color: #ffd036;
+            border: none;
+        }
+
+        .checkbox-group {
+            display: flex;
+            gap: 10px;
+        }
+
+        .radio-group {
+            display: flex;
+            gap: 20px;
+        }
+
+        .resume {
+            display: none;
+            margin-left: 20px;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="bg-dark text-white text-center py-3">
+        <h1>Best Hotel</h1>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" onclick="navigate('homepage')">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="navigate('rooms')">Kamar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="navigate('facilities')">Fasilitas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="navigate('booking')">Pesan Sekarang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="navigate('admin')">Admin</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container my-4" id="main-content">
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Queen Best Hotel</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
